@@ -1,0 +1,63 @@
+name: simenara
+description: Aplikasi SI MENARA
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Networking
+  http: ^1.2.0
+  dio: ^5.4.0
+  supabase_flutter: ^2.5.0
+  cached_network_image: ^3.3.1
+  flutter_cache_manager: ^3.3.1
+  faker: ^2.1.0
+  flutter_dotenv: ^5.1.0
+
+  # UI
+  google_fonts: ^7.1.0
+  fl_chart: ^0.66.2
+  dotted_border: ^2.1.0
+
+  # Media & File
+  image_picker: ^1.0.7
+  file_picker: ^10.3.9
+  path_provider: ^2.1.1
+  open_filex: ^4.7.0
+
+  # Utils
+  url_launcher: ^6.3.2
+  shared_preferences: ^2.5.4
+  fluttertoast: ^9.0.0
+  intl: ^0.20.2
+  provider: ^6.0.5
+  mailer: ^6.0.1
+
+  # Deep link
+  app_links: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.4.4
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/icons/profile.png
+    - assets/images/
+    - assets/images/icon.png
+    - assets/template/email_template.html
+
+flutter_launcher_icons:
+  android: true
+  ios: true
